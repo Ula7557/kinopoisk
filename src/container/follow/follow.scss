@@ -1,0 +1,222 @@
+.follow {
+    margin-top: 50px;
+    .follow-inner-top {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .follow-block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 60px 86px 50px;
+
+            a {
+                font-size: 35px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+            }
+
+            .follow-info {
+                div {
+                    font-size: 44px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    text-align: center;
+
+                    &:first-child {
+                        color: #fff;
+                        margin-top: 20px;
+                    }
+
+                    &:last-child {
+                        color: #868eff;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .follow-protsent {
+                div {
+                    display: flex;
+                    width: 100%;
+                    height: 10px;
+                    div {
+                        &:first-child {
+                            width: 65%;
+                            background: #fff;
+                        }
+
+                        &:last-child {
+                            width: 35%;
+                            background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .2) 16.62%);
+                        }
+                    }
+                }
+
+                p {
+                    &:first-child {
+                        width: 100%;
+                        margin: 0 0 12px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        color: #fff;
+                        margin-top: 40px;
+                    }
+
+                    &:last-child {
+                        bottom: -48px;
+                        width: 100%;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: hsla(0, 0%, 100%, .7);
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.follow-btn {
+    border: none;
+    // width: 121px;
+    min-width: 121px;
+    // max-height: 40px;
+    margin: auto auto auto 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: center;
+    white-space: normal;
+    border-radius: 100px;
+    padding: 17px;
+    cursor: pointer;
+
+
+
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#ff5c4d), color-stop(26.56%, #eb469f), color-stop(75%, #8341ef), to(#3f68f9));
+    background: -webkit-linear-gradient(left, #ff5c4d, #eb469f 26.56%, #8341ef 75%, #3f68f9);
+    background: linear-gradient(90deg, #ff5c4d, #eb469f 26.56%, #8341ef 75%, #3f68f9);
+    -webkit-transition: background .2s ease, -webkit-transform .2s ease;
+    transition: background .2s ease, -webkit-transform .2s ease;
+    transition: background .2s ease, transform .2s ease;
+    transition: background .2s ease, transform .2s ease, -webkit-transform .2s ease;
+
+    &:hover {
+        color: #fff;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+.btn {
+    display: grid;
+    justify-content: center;
+    margin: 70px auto 0 auto;
+}
+
+.follow-sum {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, .6);
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    .follow {
+        margin-top: 0;
+    }
+    .follow .follow-inner-top .follow-block {
+        padding: 5px;
+    }
+    .follow .follow-inner-top .follow-block a {
+        font-size: 13px;
+    }
+    .follow .follow-inner-top .follow-block .follow-info div {
+        font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    }
+    .follow .follow-inner-top .follow-block .follow-info div:first-child {
+        margin-top: 8px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-info div:last-child {
+        margin-top: 8px;
+    }
+    .follow .follow-inner-top .follow-block .follow-protsent p:first-child {
+        width: 100%;
+        margin: 0 0 12px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-protsent div {
+        display: flex;
+        width: 100%;
+        height: 4px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-protsent p:last-child {
+        bottom: -48px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+        color: hsla(0, 0%, 100%, 0.7);
+        margin-top: 12px;
+    }
+
+    .follow-btn {
+        border: none;
+        /* min-width: 121px; */
+        margin: auto auto auto 0;
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 14px;
+        text-align: center;
+        white-space: normal;
+        border-radius: 100px;
+        padding: 8px;
+        cursor: pointer;
+        color: #fff;
+        background: linear-gradient(90deg, #ff5c4d, #eb469f 26.56%, #8341ef 75%, #3f68f9);
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn {
+        display: grid;
+        justify-content: center;
+        display: none;
+    }
+
+    .follow-sum {
+        margin-top: 12px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: hsla(0, 0%, 100%, 0.6);
+        margin-top: 4px;
+    }
+
+
+
+  }

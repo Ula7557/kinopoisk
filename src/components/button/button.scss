@@ -1,0 +1,33 @@
+.button-block {
+   button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-weight: 600;
+        font-style: normal;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        border-radius: 5.2rem;
+        outline: none;
+        -webkit-transition: background-color var(--kp-ui-kit-button-transition),-webkit-transform var(--kp-ui-kit-button-transition);
+        transition: background-color var(--kp-ui-kit-button-transition),-webkit-transform var(--kp-ui-kit-button-transition);
+        transition: transform var(--kp-ui-kit-button-transition),background-color var(--kp-ui-kit-button-transition);
+        transition: transform var(--kp-ui-kit-button-transition),background-color var(--kp-ui-kit-button-transition),-webkit-transform var(--kp-ui-kit-button-transition);
+        transition: all ease 0.3s;
+        padding: 10px 20px;
+        cursor: pointer;
+        img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

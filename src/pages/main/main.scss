@@ -1,0 +1,177 @@
+.oscar-card {
+    padding: 0 50px 50px;
+
+    .slick-dots {
+        display: none !important;
+    }
+}
+
+.main {
+    width: 86%;
+}
+
+.kino-tv-and {
+    padding: 0 0 50px 50px !important;
+}
+
+.no-card-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .no-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 229px;
+        min-width: 229px;
+        height: 294px;
+        background-color: #f4f4f4;
+    }
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 0 50px;
+
+}
+
+.slick-prev {
+    display: block;
+    background: #f9f9f9 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    left: -28px !important;
+    z-index: 2 !important;
+    cursor: pointer;
+}
+
+.slick-next {
+    display: block;
+    background: #f9f9f9 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    right: -10px !important;
+    z-index: 2 !important;
+    cursor: pointer;
+}
+
+.slick-prev:before {
+    color: black !important;
+}
+
+.slick-next:before {
+    color: black !important;
+}
+
+.all-oscar {
+    padding-bottom: 30px;
+}
+
+.new-films {
+    margin-top: 16px;
+    padding: 0 50px 50px;
+}
+
+.watch-now {
+    padding: 0 50px 50px;
+}
+
+.black-background {
+    background: #000;
+    padding-bottom: 40px;
+
+    h4 {
+        color: #fff;
+        padding: 50px;
+    }
+}
+
+.popular-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 50px 50px;
+}
+
+.calendar {
+    padding: 0 50px 50px;
+
+    h4 {
+        margin: 0 0 24px;
+        padding-bottom: 16px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #1f1f1f;
+        border-bottom: 1px solid #000;
+        padding-left: 0;
+    }
+}
+
+.trailer {
+    padding: 0 50px 50px;
+
+    h4 {
+        padding: 0 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .main {
+        width: 100%;
+    }
+    .popular-block {
+        flex-direction: column-reverse;
+    }
+
+    .black-background h4 {
+        display: none;
+    }
+
+    .watch-now {
+        padding: 30px 15px 0  30px;
+    }
+
+    .popular-block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 15px 30px;
+    }
+
+    .calendar {
+        padding: 0 15px 30px;
+    }
+
+    .trailer {
+        padding: 0 15px 30px;
+    }
+
+    .new-films {
+        margin-top: 16px;
+        padding: 0 15px 30px;
+    }
+
+    .oscar-card {
+        padding: 0 15px 30px;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        padding: 0 15px;
+    }
+
+    .all-oscar {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+  }

@@ -1,0 +1,151 @@
+.today-popular {
+    max-width: 40%;
+
+    h6 {
+        margin: 6px 0 16px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+}
+
+
+.oscar-card-blocks {
+    padding-bottom: 20px;
+
+
+    .oscar-card-top {
+
+        .oscar-card-top-img {
+            width: 100%;
+    height: 270px;
+    object-fit: cover;
+    img {
+        width: 100%;
+        height: 100%;object-fit: cover;
+    }
+        }
+
+        .os-img {
+            width: 100%;
+        }
+
+        .oscar-card-inner {
+            &:hover {
+                .os-title {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .os-title {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+
+            .divs {
+                display: flex;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-bottom: -3px;
+                }
+
+            }
+        }
+    }
+
+    .spane {
+        position: relative;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .6);
+    }
+}
+
+.oscar-mini-card {
+
+    border-top: 1px solid rgba(55,50,145,.1);
+    
+
+    .mini-card {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+
+        .oscar-icons {
+            width: 140px;
+            height: 82px;
+            object-fit: cover;
+        }
+
+        .mini-card-inner {
+            margin-left: 16px;
+
+            .oscar-info {
+                margin-top: 5px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 18px;
+                display: block;
+                text-decoration: none;
+                color: #f50;
+            }
+
+            .os-title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22px;
+                text-align: left;
+                white-space: normal;
+                text-decoration: none;
+                letter-spacing: 0;
+                color: #000;
+                transition: color .1s ease;
+                &:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+
+                img {
+                    margin-bottom: -3px;
+                }
+
+                .spane {
+                    position: relative;
+                    display: inline;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, .6);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .today-popular {
+        max-width: 100%;
+    }
+
+    .oscar-card-blocks .oscar-card-top .os-title {
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .oscar-mini-card .mini-card .mini-card-inner .os-title {
+        font-size: 15px;
+        line-height: 17px;
+    }
+  }

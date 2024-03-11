@@ -1,0 +1,143 @@
+.cards {
+    position: relative;
+    // width: 150px;
+    // min-width: 150px;
+
+    // &:first-child {
+    //     min-width: 465px;
+    //     height: 100%;
+    //     height: 273px;
+    // }
+    transition: all ease 0.5s;
+
+
+    width: 229px;
+    min-width: 229px;
+    height: 294px;
+
+
+
+    .cards-img {
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            overflow: hidden;
+            width: 100%;
+            height: 225px;
+            min-height: 225px;
+            white-space: nowrap;
+            text-indent: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 27px;
+            height: 18px;
+            background: green;
+            color: white;
+            padding: 1px;
+        }
+    }
+
+    .cards-inf {
+        span {
+            position: absolute;
+            padding: 3px 7px;
+            background-color: #f50;
+            bottom: 77px;
+            right: 10px;
+            height: 20px;
+            font-size: 13px;
+            line-height: 16px;
+            color: #fff;
+        }
+
+        .cards-inf-name {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 18px;
+            color: rgb(0, 0, 0);
+            margin-top: 5px;
+        }
+
+        .cards-inf-years {
+            display: block;
+            overflow: hidden;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: 5px;
+        }
+    }
+}
+
+
+.tv-list {
+    .slick-active {
+        .cards {
+            &:first-child {
+                width: 350px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cards {
+        width: 150px;
+        min-width: auto;
+        height: 225px;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .cards {
+        width: 165px;
+    min-width: auto;
+    height: 180px;
+    }
+
+    .cards .cards-img span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 14px;
+        background: green;
+        color: white;
+        padding: 1px;
+        font-size: 10px;
+    }
+
+    .cards .cards-inf span {
+        position: absolute;
+        padding: 1px 3px;
+        background-color: #f50;
+        bottom: -50px;
+        right: 10px;
+        height: 17px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .cards .cards-img img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        min-height: auto;
+        white-space: nowrap;
+        text-indent: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+  }
