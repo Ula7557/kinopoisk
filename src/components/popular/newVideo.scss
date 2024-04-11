@@ -59,7 +59,11 @@
 
 @media screen and (max-width: 720px) {
     .new-video {
-        max-width: 100%;
+        max-width: 22%;
+    }
+    .new-video .new-video-inner .oscar-img-block {
+        width: 100%;
+        // height: 200px;
     }
   }
 
@@ -69,6 +73,9 @@
     .new-video .new-video-inner .oscar-img-block {
         width: 100%;
         height: 200px;
+    }
+    .new-video {
+        max-width: 100%;
     }
 
     .new-video .new-video-inner .oscar-img-block img {

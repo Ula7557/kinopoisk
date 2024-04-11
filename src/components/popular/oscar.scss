@@ -136,8 +136,41 @@
 
 @media screen and (max-width: 720px) {
     .today-popular {
+        max-width: 40%;
+    }
+
+    .popular {
+        max-width: 22%;
+    }
+
+    
+
+    .oscar-card-blocks .oscar-card-top .os-title {
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .oscar-mini-card .mini-card .mini-card-inner .os-title {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .oscar-card-blocks .oscar-card-top .oscar-card-top-img {
+        height: auto;
+    }
+  }
+  
+@media screen and (max-width: 410px) {
+    .today-popular {
         max-width: 100%;
     }
+
+   
+
+    .popular {
+        max-width: 100%;
+    }
+
 
     .oscar-card-blocks .oscar-card-top .os-title {
         font-size: 18px;

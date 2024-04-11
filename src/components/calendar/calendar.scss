@@ -43,6 +43,12 @@
             color: #000;
             transition: color .1s ease;
             margin-left: 10px;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width:140px; /* some width */
+        
         }
     }
 

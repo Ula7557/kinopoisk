@@ -1,7 +1,9 @@
 .follow {
     margin-top: 50px;
+    margin-left: 16px;
     .follow-inner-top {
         position: relative;
+        height: 600px;
 
         img {
             width: 100%;
@@ -220,3 +222,44 @@
 
 
   }
+
+
+@media screen and (max-width: 720px) {
+
+    .follow .follow-inner-top .follow-block a {
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-info div:first-child {
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-info div:last-child {
+        font-size: 26px;
+        margin-top: 13px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-protsent p:first-child {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .follow .follow-inner-top .follow-block .follow-protsent div {
+        height: 12px;
+    }
+
+    .follow {
+        margin-left: 0;
+    }
+
+    .follow .follow-inner-top {
+        height: 360px;
+    }
+
+    .follow .follow-inner-top img {
+        object-fit: cover;
+    }
+
+}

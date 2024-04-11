@@ -1,18 +1,62 @@
 .mobile-header {
 
-    
+    .mobile-list {
+        position: fixed;
+        width: 94%;
+    }
+    position: relative;
+    .mobile-header-search-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        background-color: #444;
+        height: 0;
+        overflow-y: hidden;
+        transition: all ease 0.3s;
+        z-index: 20;
+        margin-top: -11px;
+        position: relative;
+        position: fixed;
+        width: 100%;
+        .css-yz9k0d-MuiInputBase-input {
+            color: white !important;
+        }
+        &.opened {
+            margin-top: 0;
+            height: 56px;
+            transition: all 0.3s;
+            position: fixed;
+            width: 100%;
+        }
+
+        
+    }
+
+    .search-shadov {
+        height: 0;
+        background: #000;
+        opacity: 0.5;
+        width: 100%;
+        z-index: 19;
+        position: fixed;
+        transition: all 0.3s;
+        left: 0;
+        right: 0;
+        &.opened {
+            height: 1000px;
+        }
+    }
     
 
    
     .mobile-header-inner {
         position: fixed;
+        top: 0;
+        width: 100%;
         background-color: #141414;
-        z-index: 3;
-        width: 100%;
-        padding: 10px 0;
-        display: flex;
-        align-items: center;
-        width: 100%;
+        padding: 9px 0;
 
         .mob-header-top {
             display: flex;
@@ -20,6 +64,8 @@
             align-items: center;
             width: 100%;
             padding: 0 20px;
+            position: relative;
+            z-index: 3;
 
             .mob-header-top-inner {
                 display: flex;
@@ -65,7 +111,7 @@
     font-weight: 500;
     line-height: 24px;
     margin-left: 7px;
-    color: hsla(0,0%,100%,.6);
+    color: hsla(0, 0%, 7%, 0.6);
 }
 
 

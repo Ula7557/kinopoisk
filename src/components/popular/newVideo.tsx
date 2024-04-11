@@ -1,9 +1,7 @@
 import { get } from 'lodash'
 import comment from '../../assets/icon/comment.svg'
-import leo from '../../assets/leo.webp'
 import useGet from '../../hooks/useGet'
 import './newVideo.scss'
-import { useState } from 'react'
 
 const NewVideo = () => {
 

@@ -1,7 +1,6 @@
 import './index.scss'
 import { get } from "lodash"
 import useGet from "../../hooks/useGet"
-import mss from '../../assets/mss.jpg'
 import saves from '../../assets/icon/save.svg'
 import Slider from 'react-slick'
 
@@ -36,7 +35,7 @@ export const TodayFilms = () => {
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 400,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -47,7 +46,7 @@ export const TodayFilms = () => {
 
 
     return (
-      <div className="today-films-cards">
+      <div className="today-films-cards container">
       {
             items ?
             <Slider {...settings}>

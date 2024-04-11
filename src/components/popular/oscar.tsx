@@ -1,4 +1,3 @@
-import img from '../../assets/oscar123.webp'
 import './oscar.scss'
 import comment from '../../assets/icon/comment.svg'
 import useGet from '../../hooks/useGet'

@@ -1,8 +1,8 @@
 .sidebar {
-    flex: 0 0 200px;
     width: 200px;
-    height: 100vh;
-    padding: 0 10px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
 
     li {
         display: flex;
@@ -26,26 +26,19 @@
         }
     }
 
-    .sidebar-inner {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        min-height: 100%;
-        margin-left: -17px;
-        padding-right: 16px;
-        border-right: 1px solid rgba(31, 31, 31, .1);
-        margin-left: 12px;
-        position: fixed;
-    }
 
     .sidebar-inner_wrapper {
-        position: sticky;
-        top: 72px;
+        position: fixed;
+        width: 216px;
+        height: 100%;
+        background: #fff;
+        border-right: 1px solid rgb(187, 187, 187);
     }
 
     .sidebar-inner-block {
         padding-top: 27px;
         padding-bottom: 25px;
+        padding-left: 20px;
     }
 
     nav {
@@ -57,8 +50,10 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+
+
+@media screen and (max-width: 960px) {
     .sidebar {
         display: none;
     }
-  }
+}

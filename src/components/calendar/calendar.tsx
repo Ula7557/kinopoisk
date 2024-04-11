@@ -1,6 +1,5 @@
 import './calendar.scss'
 import saveIcon from '../../assets/icon/save.svg'
-import frau from '../../assets/frau.webp'
 import useGet from '../../hooks/useGet'
 import { get } from 'lodash'
 

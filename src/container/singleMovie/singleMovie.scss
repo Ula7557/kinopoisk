@@ -21,6 +21,13 @@
     }
 }
 
+.treyler-div {
+    .shadov-div {
+        height: auto;
+    }
+}
+
+
 .films-info-single-inner {
     ul {
         padding: 0;
@@ -65,6 +72,33 @@
         }
     }
 }
+.you-tra {
+    width: 100%;
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.you-tras {
+    width: 100%;
+    iframe {
+        width: 1000px;
+        height: 500px;
+        
+    }
+}
+
+    .css-1wnsr1i {
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto;
+        outline: none !important;
+    }
+
 
 .films-info-single-inner {
     display: flex;
@@ -83,12 +117,29 @@
     }
 }
 
+.treyler-divs {
+    position: relative;
+    margin-bottom: 30px;
+    .shadov-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 12;
+        cursor: pointer;
+    }
+}
+
 .single {
     display: flex;
     align-items: flex-start;
     width: 100%;
     margin-top: 30px;
-    max-height: 700px;
+    max-height: 900px;
     justify-content: space-between;
 
     .single-inner {
@@ -96,13 +147,13 @@
             width: 25%;
         }
         &:nth-child(2) {
-            width: 40%;
+            width: 35%;
         }
         &:first-child {
             margin-right: 30px;
-            width: 25%;
+            width: 35%;
 
-            div {
+            .single-first-child {
                 height: 430px;
 
                 .novie-img {
@@ -161,6 +212,13 @@
     display: inline-block;
 }
 
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    background: white !important;
+}
+
+
+
 .osenka {
     display: block;
     color: rgba(0,0,0,.6);
@@ -185,7 +243,7 @@
     font-size: 13px;
     list-style: none;
     line-height: 15px;
-    max-width: 120px;
+    max-width: 100%;
 }
 
 .films-info-desc {
@@ -213,7 +271,9 @@
 }
 
 .single-block-item {
-    padding:0 0 20px 0;
+    min-height: 100vh;
+    padding:0 0 20px 50px;
+    width: 80%;
 }
 
 .comp-na {
@@ -223,8 +283,48 @@
 }
 
 
+
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+
+@media screen and (max-width: 960px) {
+    .single-block-item {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .pro-comp {
+        padding-left: 15px;
+    }
+
+    .comp-na {
+        padding: 7px;
+    }
+
+    
+}
+
+
+
 @media screen and (max-width: 720px) {
     
+    .pro-comp {
+        padding: 0;
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+
+    .single-block-item {
+        width: 100%;
+    }
+
+    .single-block-item {
+        padding: 60px 0 0 0;
+    }
+
   }
 @media screen and (max-width: 410px) {
     .single {
@@ -256,7 +356,7 @@
     }
 
     .single-block-item {
-        padding: 40px 0 0 0;
+        padding: 0;
     }
 
     .lorem-inp {
@@ -264,5 +364,9 @@
         list-style: none;
         line-height: 15px;
         max-width: max-content;
+  }
+
+  .single-block-item {
+    width: 100%;
   }
 }

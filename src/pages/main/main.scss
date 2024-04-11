@@ -7,7 +7,10 @@
 }
 
 .main {
-    width: 86%;
+    width: 83%;
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
 }
 
 .kino-tv-and {
@@ -39,13 +42,17 @@ h4 {
 
 }
 
+.h4-title {
+    padding: 0 50px;
+}
+
 .slick-prev {
     display: block;
     background: #f9f9f9 !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 35px !important;
+    height: 35px !important;
     border-radius: 50% !important;
-    left: -28px !important;
+    left: -17px !important;
     z-index: 2 !important;
     cursor: pointer;
 }
@@ -53,8 +60,8 @@ h4 {
 .slick-next {
     display: block;
     background: #f9f9f9 !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 35px !important;
+    height: 35px !important;
     border-radius: 50% !important;
     right: -10px !important;
     z-index: 2 !important;
@@ -75,7 +82,7 @@ h4 {
 
 .new-films {
     margin-top: 16px;
-    padding: 0 50px 50px;
+    padding: 0 50px 0;
 }
 
 .watch-now {
@@ -122,13 +129,27 @@ h4 {
     }
 }
 
+
+
+
+@media screen and (max-width: 960px) {
+    .main {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width: 720px) {
 
     .main {
         width: 100%;
+        margin-top: 0;
+
     }
-    .popular-block {
-        flex-direction: column-reverse;
+
+
+    .h4-title {
+        padding: 0 16px;
     }
 
     .black-background h4 {
@@ -136,7 +157,7 @@ h4 {
     }
 
     .watch-now {
-        padding: 30px 15px 0  30px;
+        padding: 30px 15px 0 30px;
     }
 
     .popular-block {
@@ -174,4 +195,13 @@ h4 {
         padding-bottom: 10px;
         font-size: 20px;
     }
-  }
+}
+
+
+@media screen and (max-width: 410px) {
+
+    .popular-block {
+        flex-direction: column-reverse;
+    }
+
+}

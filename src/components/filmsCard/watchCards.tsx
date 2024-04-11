@@ -2,15 +2,14 @@ import { get } from 'lodash'
 import useGet from '../../hooks/useGet'
 import './watchCards.scss'
 import Slider from 'react-slick'
-import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const WatchCards = () => {
 
    
 
 
-    const { data, loading } = useGet({ url: `3/tv/airing_today`})
+    const { data, loading } = useGet({ url: `3/discover/movie`})
     const items: any | undefined = get(data, "data.results")
 
 
@@ -33,18 +32,26 @@ const WatchCards = () => {
                 }
             },
             {
-                breakpoint: 720,
+                breakpoint: 960,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 2,
                     initialSlide: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 410,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             }
         ]
@@ -59,12 +66,12 @@ const WatchCards = () => {
                 <Slider {...settings}>
                     {
                         items && items.map((item: any, index: any) => (
-                            <div key={index} className="watch-cards">
+                            <Link to={`/movies/${item.id}`} key={index} className="watch-cards">
                                 <div className="cards-img">
-                                    <span>7.0</span>
+                                <span className={item.vote_average > 7 ? '' : 'five'} >{item.vote_average.toFixed(1)}</span>
                                     <img src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} alt="img" />
                                 </div>
-                            </div>
+                            </Link>
                         ))
                     }
                 </Slider>

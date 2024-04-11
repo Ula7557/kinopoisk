@@ -1,26 +1,14 @@
 .cards {
     position: relative;
-    // width: 150px;
-    // min-width: 150px;
-
-    // &:first-child {
-    //     min-width: 465px;
-    //     height: 100%;
-    //     height: 273px;
-    // }
     transition: all ease 0.5s;
 
 
-    width: 229px;
-    min-width: 229px;
+    width: 150px;
+    min-width: 150px;
     height: 294px;
 
 
-
     .cards-img {
-        &:hover {
-            opacity: 0.8;
-        }
         img {
             overflow: hidden;
             width: 100%;
@@ -40,7 +28,13 @@
             height: 18px;
             background: green;
             color: white;
-            padding: 1px;
+            display: flex;
+            padding: 2px;
+            justify-content: center;
+
+            &.five {
+                background: rgb(115, 115, 115);
+            }
         }
     }
 
@@ -81,6 +75,19 @@
 
 
 .tv-list {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        .cards-inf-name {
+            color: red;
+        }
+
+        .cards-img {
+            opacity: 0.8;
+        }
+    }
+
     .slick-active {
         .cards {
             &:first-child {
@@ -90,19 +97,71 @@
     }
 }
 
+
+
+@media screen and (max-width: 1440px) {
+    .card span {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .card span {
+        width: 228px;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+    .card span {
+        width: 205px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card span {
+        width: 165px;
+    }
+
+    .cards {
+        min-width: auto;
+        width: 129px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card span {
+        width: 202px;
+    }
+
+    .cards {
+        width: 158px;
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .card span {
+        width: 155px;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .cards {
         width: 150px;
         min-width: auto;
         height: 225px;
     }
-  }
 
-  @media screen and (max-width: 410px) {
+    .cards .cards-inf span {
+        bottom: 6px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
     .cards {
-        width: 165px;
-    min-width: auto;
-    height: 180px;
+        width: 141px;
+        min-width: auto;
+        height: 210px;
     }
 
     .cards .cards-img span {
@@ -140,4 +199,4 @@
         object-fit: cover;
         cursor: pointer;
     }
-  }
+}

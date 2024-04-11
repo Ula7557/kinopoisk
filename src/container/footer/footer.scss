@@ -165,7 +165,14 @@
 @media screen and (max-width: 720px) {
 
     .footer {
-        margin-top: 56px;
+        margin-top: 0px;
+    }
+    .footer .footer-top .footer-top-inner h2 {
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 10px;
     }
 }
 

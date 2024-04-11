@@ -7,8 +7,12 @@ import img4 from '../../assets/icon/img4.svg'
 import img5 from '../../assets/icon/img5.svg'
 import img6 from '../../assets/icon/img6.svg'
 import img7 from '../../assets/icon/img7.svg'
+import { useEffect, useState } from "react"
 
 export const Sidebar = () => {
+
+    
+    
     const menu = [
         {
             name: "Главная",
@@ -18,37 +22,36 @@ export const Sidebar = () => {
         {
             name: "Онлайн-кинотеатр",
             ic: img2,
-            path:"/Онлайн-кинотеатр"
+            path:"/null"
         },
         {
             name: "Фильмы",
             ic: img3,
-            path:"/Фильмы"
+            path:"/null"
         },
         {
             name: "Сериалы",
             ic: img4,
-            path:"/Сериалы"
+            path:"/null"
         },
         {
             name: "Спорт",
             ic: img5,
-            path:"/Спорт"
+            path:"/null"
         },
         {
             name: "Билеты в кино",
             ic: img6,
-            path:"/Билеты"
+            path:"/null"
         },
         {
             name: "Медиа",
             ic: img7,
-            path:"/Медиа"
+            path:"/null"
         },
     ]
     return (
         <div className="sidebar">
-            <div className="sidebar-inner">
                 <div className="sidebar-inner_wrapper">
                     <div className="sidebar-inner-block">
                         <nav>
@@ -63,7 +66,6 @@ export const Sidebar = () => {
                                 }
                             </ul>
                         </nav>
-                    </div>
                 </div>
             </div>
         </div>

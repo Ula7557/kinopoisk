@@ -19,6 +19,15 @@ const TrailerCard = () => {
             {
                 breakpoint: 1024,
                 settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
@@ -28,13 +37,13 @@ const TrailerCard = () => {
             {
                 breakpoint: 720,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 2,
                     initialSlide: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 400,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -44,7 +53,7 @@ const TrailerCard = () => {
     };
 
     return (
-        <div className='trailer-box'>
+        <div className='trailer-box slick-btn-box'>
             <Slider {...settings}>
             {
                 items && items.map((item:any,index:any) => (
