@@ -28,7 +28,7 @@ function App() {
           <Sidebar />
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/null" element={<NullFolder />} />
+            <Route path="/nulls" element={<NullFolder />} />
             <Route path="/searchInfo" element={<SearchFIlms />} />
             <Route path="/movies/:id" element={<SingleMovie />} />
             <Route path="/tv/:id" element={<SingleTv />} />

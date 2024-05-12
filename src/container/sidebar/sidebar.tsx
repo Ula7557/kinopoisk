@@ -22,32 +22,32 @@ export const Sidebar = () => {
         {
             name: "Онлайн-кинотеатр",
             ic: img2,
-            path:"/null"
+            path:"/nulls"
         },
         {
             name: "Фильмы",
             ic: img3,
-            path:"/null"
+            path:"/nulls"
         },
         {
             name: "Сериалы",
             ic: img4,
-            path:"/null"
+            path:"/nulls"
         },
         {
             name: "Спорт",
             ic: img5,
-            path:"/null"
+            path:"/nulls"
         },
         {
             name: "Билеты в кино",
             ic: img6,
-            path:"/null"
+            path:"/nulls"
         },
         {
             name: "Медиа",
             ic: img7,
-            path:"/null"
+            path:"/nulls"
         },
     ]
     return (
